@@ -1,2 +1,3 @@
 # Embedded C codes
-###hhhh
+###This repo is for storing Some important embedded C logics
+
