@@ -21,7 +21,7 @@ void loop() {
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
   distanceCm = duration * 0.0341 / 2;
-  distancemeter = duration * 0.000341 / 2;
+  distancemeter = 0.9834 *(30.5-( duration * 0.0341 / 2));
   lcd.setCursor(0, 0);
   lcd.print("Distance:");
   Serial.println(distanceCm);
@@ -30,6 +30,6 @@ void loop() {
   lcd.setCursor(0, 1);
   lcd.print("    ");
   lcd.print(distancemeter);
-  lcd.print(" meter");
+  lcd.print(" m3");
   delay(1000);
 }
